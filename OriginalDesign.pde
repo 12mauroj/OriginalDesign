@@ -1,6 +1,6 @@
 int x = 30;
 int y = 450;
-int speed = 1;
+
  
  
 
@@ -13,22 +13,13 @@ int speed = 1;
 }
 void draw()
 {
-  ball();
-  hole();
+    hole();
   stick();
   flag();
+  ball();
 }
 
-void ball() 
-{
-  fill(255,255,255);
-  ellipse(x,y,50,50); //golf ball
-  x = x + 5;
-  y = y - 5;
-  redraw();
-   
 
-}
 void hole()
 {  
   stroke(0);
@@ -47,5 +38,14 @@ void flag()
 {
   fill(7,38,185);
   rect(50,20,100,100);
-  
 }
+  void ball() 
+{
+  fill(255,255,255);
+  ellipse(x,y,50,50); //golf ball
+  x = x + 5;
+  y = y - 5;
+  redraw();
+}
+ 
+ 
