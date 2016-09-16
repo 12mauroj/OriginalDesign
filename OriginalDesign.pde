@@ -13,10 +13,10 @@ int y = 450;
 }
 void draw()
 {
-    hole();
+  hole();
   stick();
   flag();
-  ball();
+  golfball();
 }
 
 
@@ -39,7 +39,7 @@ void flag()
   fill(7,38,185);
   rect(50,20,100,100);
 }
-  void ball() 
+  void golfball() 
 {
   fill(255,255,255);
   ellipse(x,y,50,50); //golf ball
@@ -47,5 +47,4 @@ void flag()
   y = y - 5;
   redraw();
 }
- 
  
